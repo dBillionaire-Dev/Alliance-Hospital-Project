@@ -8,7 +8,7 @@ import { AnimatedSection } from "@/components/animated-section"
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Alliance Hospital Abuja's mission, vision, values, and our commitment to providing exceptional healthcare services in Nigeria.",
+    "Learn about Alliance Hospital Abuja's vision, mission, values, and our commitment to providing exceptional healthcare services in Nigeria.",
 }
 
 export default function AboutPage() {
@@ -42,7 +42,7 @@ export default function AboutPage() {
                     alt="About Alliance Hospital"
                     width={600}
                     height={600}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-full lg:h-[600px] object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
@@ -224,22 +224,22 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: "Dr. Emmanuel Kouassi",
-                role: "Chief Executive Officer",
-                bio: "Dr. Kouassi has over 25 years of experience in healthcare management and is committed to advancing healthcare standards in West Africa.",
-                image: "/placeholder.svg?height=300&width=300",
+                name: "Dr. Christopher Otabor",
+                role: "Medical Director",
+                bio: "Dr. Otabor has over 25 years of experience in healthcare management and is committed to advancing healthcare standards in West Africa.",
+                image: "/images/MD.jpeg?height=300&width=300",
               },
               {
-                name: "Dr. Marie Diallo",
-                role: "Chief Medical Officer",
-                bio: "Dr. Diallo oversees all clinical operations and ensures that our medical services meet the highest standards of quality and safety.",
-                image: "/placeholder.svg?height=300&width=300",
+                name: "Dr. Michael Enokela",
+                role: "Deputy Director, Clinical Services",
+                bio: "Dr. Michael oversees all clinical operations and ensures that our medical services meet the highest standards of quality and safety.",
+                image: "/images/DR Mike.jpg?height=300&width=300",
               },
               {
-                name: "Mr. Jean-Paul Bédié",
-                role: "Chief Operations Officer",
-                bio: "Mr. Bédié manages the day-to-day operations of the hospital, ensuring efficient service delivery and resource management.",
-                image: "/placeholder.svg?height=300&width=300",
+                name: "Miss Chikaodili Ugochukwu",
+                role: "Senior Operations Manager",
+                bio: "Miss Chikaodili manages the day-to-day operations of the hospital, ensuring efficient service delivery and resource management.",
+                image: "/images/OPM.jpeg?height=300&width=300",
               },
             ].map((leader, index) => (
               <AnimatedSection key={leader.name} delay={300 + index * 200}>
@@ -250,7 +250,7 @@ export default function AboutPage() {
                       alt={leader.name}
                       width={300}
                       height={300}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="p-6">
